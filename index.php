@@ -9,10 +9,10 @@ $provider = new \League\OAuth2\Client\Provider\GenericProvider([
     'clientId'                => APP_CLIENT_ID,    
     'clientSecret'            => APP_CLIENT_SECRET ,  
     'scopes'                  => 'urn:opc:idm:__myscopes__',
-    'redirectUri'             => 'https://orcl.asia/idcs/',
-    'urlAuthorize'            => 'https://idcsapac.idcshub.com/oauth2/v1/authorize',
-    'urlAccessToken'          => 'https://idcsapac.idcshub.com/oauth2/v1/token',
-    'urlResourceOwnerDetails' => 'https://idcsapac.idcshub.com/admin/v1/Me'
+    'redirectUri'             => 'https://your_web_server/',
+    'urlAuthorize'            => 'https://your_IDCS_tenant/oauth2/v1/authorize',
+    'urlAccessToken'          => 'https://your_IDCS_tenant/oauth2/v1/token',
+    'urlResourceOwnerDetails' => 'https://your_IDCS_tenant/admin/v1/Me'
 ]);
  
 // If we don't have an authorization code then get one
